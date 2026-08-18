@@ -36,7 +36,7 @@ pipeline {
 
                     sleep 5
 
-                    docker rm -f php-test
+                    docker rm -f php-m
                 '''
             }
         }
