@@ -30,7 +30,7 @@ pipeline {
             steps {
                 sh '''
                     docker run -d \
-                    --name php-test \
+                    --name php-m \
                     -p 8082:80 \
                     ${IMAGE_NAME}:${IMAGE_TAG}
 
