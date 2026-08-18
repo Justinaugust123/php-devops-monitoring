@@ -3,7 +3,7 @@ pipeline {
     agent any
 
     environment {
-        IMAGE_NAME = "YOUR_USERNAME/php-devops-monitoring"
+        IMAGE_NAME = "docker.io/justinaugust123/php-devops-monitoring"
         IMAGE_TAG = "${BUILD_NUMBER}"
     }
 
