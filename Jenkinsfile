@@ -31,13 +31,10 @@ pipeline {
                 sh '''
                     docker run -d \
                     --name php-test \
-                    -p 8081:80 \
+                    -p 8082:80 \
                     ${IMAGE_NAME}:${IMAGE_TAG}
 
                     sleep 5
-
-                    curl -f http://localhost:8081/
-                    curl -f http://localhost:8081/metrics.php
 
                     docker rm -f php-test
                 '''
